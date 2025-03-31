@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Fraud Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🛡️ Banking Fraud Detection System</h1>
+        <p>Verify transaction security with advanced fraud detection</p>
+
+        <form id="transactionForm">
+            <label>Sender Account Number</label>
+            <input type="text" id="senderAccount" placeholder="Enter sender account number">
+
+            <label>Receiver Account Number</label>
+            <input type="text" id="receiverAccount" placeholder="Enter receiver account number">
+
+            <label>Transaction Amount</label>
+            <input type="number" id="transactionAmount" placeholder="$ 0.00">
+
+            <label>Transaction Type</label>
+            <select id="transactionType">
+                <option>Select type</option>
+                <option>Online Purchase</option>
+                <option>UPI Transfer</option>
+                <option>Wire Transfer</option>
+                <option>ATM Withdrawal</option>
+                <option>Point of Sale</option>
+            </select>
+
+            <label>Transaction Location</label>
+            <input type="text" id="transactionLocation" placeholder="City, Country">
+
+            <label>IP Address</label>
+            <input type="text" id="ipAddress" value="192.168.1.1" readonly>
+
+            <label>Timestamp</label>
+            <input type="text" id="timestamp" readonly>
+
+            <button type="submit">"Detect Fraud"</button>
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

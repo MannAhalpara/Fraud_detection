@@ -1,0 +1,21 @@
+Okay, I understand. I'm ready to process financial transaction data and generate fraud scores with reasoning.
+
+**Input 1 (Current Transaction):**
+
+1220,500,05:26:48,UPI Transfer,192.168.1.1
+
+**Input 2 (Historical Transactions):**
+
+k3xwcaqsc,1220,1252,500,192.168.1.1,UPI Transfer,INR,1,Successful transaction,Completed,2024-03-30 05:26:48
+adsf234,1220,5432,200,192.168.1.2,Bank Transfer,INR,1,Salary,Completed,2024-03-30 10:00:00
+asdf244,1220,6547,600,192.168.1.1,UPI Transfer,INR,0,Failed-Insufficient Funds,Failed,2024-03-30 12:00:00
+qwer567,1220,9876,550,192.168.1.3,UPI Transfer,INR,1,Groceries,Completed,2024-03-30 15:00:00
+zxcv890,1220,4321,450,192.168.1.1,UPI Transfer,INR,1,Dinner,Completed,2024-03-30 18:00:00
+hjkl123,1220,8765,1000,192.168.1.4,Bank Transfer,INR,1,Rent,Completed,2024-03-30 21:00:00
+poiuy456,1220,2109,300,192.168.1.1,UPI Transfer,INR,1,Movie,Completed,2024-03-31 01:00:00
+Output:
+
+**Fraud Score:** 10/100 (Low Risk)
+
+**Reasoning Summary:**
+1. Low risk: No significant deviations detected.
